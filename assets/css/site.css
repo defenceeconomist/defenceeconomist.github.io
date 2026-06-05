@@ -8,6 +8,8 @@
   --qed-soft: #e8f1f8;
   --vfm: #0f766e;
   --vfm-soft: #e6f3f1;
+  --defence: #6d4c1d;
+  --defence-soft: #f4eee4;
   --warm: #b45309;
   --shadow: 0 16px 40px rgba(23, 33, 43, 0.06);
 }
@@ -126,7 +128,7 @@ h1 {
 .project-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .project-card {
@@ -148,12 +150,20 @@ h1 {
   border-top: 5px solid var(--vfm);
 }
 
+.project-card-defence {
+  border-top: 5px solid var(--defence);
+}
+
 .project-card-qed .project-label {
   color: var(--qed);
 }
 
 .project-card-vfm .project-label {
   color: var(--vfm);
+}
+
+.project-card-defence .project-label {
+  color: var(--defence);
 }
 
 .project-card h2 {
@@ -227,6 +237,12 @@ h1 {
   color: #ffffff;
 }
 
+.project-card-defence .button.primary {
+  background: var(--defence);
+  border-color: var(--defence);
+  color: #ffffff;
+}
+
 .project-card-qed .button.secondary {
   background: var(--qed-soft);
   border-color: #c9ddeb;
@@ -237,6 +253,12 @@ h1 {
   background: var(--vfm-soft);
   border-color: #c2e1dc;
   color: #115e59;
+}
+
+.project-card-defence .button.secondary {
+  background: var(--defence-soft);
+  border-color: #ded0bb;
+  color: #573b15;
 }
 
 .button:hover,
