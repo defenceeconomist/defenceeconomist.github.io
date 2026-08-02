@@ -70,6 +70,18 @@ main,
   text-decoration: none;
 }
 
+.top-nav .private-link {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  margin-block: -0.35rem;
+  padding: 0.35rem 0.7rem;
+}
+
+.top-nav .private-link:hover,
+.top-nav .private-link:focus {
+  border-color: var(--ink-soft);
+}
+
 .top-nav a:hover,
 .top-nav a:focus,
 .footer-links a:hover,
